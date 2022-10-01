@@ -6,6 +6,6 @@ load_dotenv(override=True)
 
 token = os.getenv('BOT_TOKEN')
 
-admins = [
+ADMINS = [
 
 ]
