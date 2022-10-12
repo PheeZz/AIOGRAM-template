@@ -85,7 +85,7 @@ class ThrottlingMiddleware(BaseMiddleware):
 
         # Prevent flooding
         if throttled.exceeded_count <= 2:
-            await message.reply('Пожалуйста, подождите {} секунды'.format(int(delta)))
+            await message.reply(f'Пожалуйста, подождите {int(delta)} секунды')
 
         # Sleep.
         await asyncio.sleep(delta)
